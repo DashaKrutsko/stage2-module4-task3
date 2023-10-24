@@ -1,7 +1,9 @@
 package com.mjc.stage2.warehouse;
 
 
+import com.mjc.stage2.Observer;
 import com.mjc.stage2.entity.RectangleValues;
+import com.mjc.stage2.event.RectangleEvent;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -32,4 +34,5 @@ public class RectangleWarehouse {
     public boolean remove(Integer rectangleId, RectangleValues rectangleValues) {
         return valueMap.remove(rectangleId, rectangleValues);
     }
+
 }
